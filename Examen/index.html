@@ -1,0 +1,260 @@
+<!DOCTYPE html> <!--Le dice al navegador "esto es HTML". Siempre va primero-->
+<html lang="es">
+<head>
+  <meta charset="UTF-8"> <!--Permite usar acentos y "ñ" sin que se vean rotos.-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!--Hace que la página se adapte a celulares.-->
+  <title>WebCraft</title> <!--	El texto que aparece en la pestaña del navegador-->
+  <link rel="stylesheet" href="css/style.css"> <!--Conecta el HTML con la hoja de estilos-->
+</head> <!--Información que no se ve en la página: título, enlaces a CSS, configuración.-->
+<body> <!--Todo lo que sí se ve textos, botones, imágenes.-->
+
+  <!-- Barra de navegación con 4 apartados -->
+  <header>
+    <h1>WebCraft</h1>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#disenos">Diseños</a>
+      <a href="#informacion">Información personal</a>
+    </nav>
+  </header>
+
+  <!-- INICIO -->
+  <section id="inicio" class="inicio">
+    <h2>Bienvenido a WebCraft</h2>
+    <p>Creamos diseños de páginas web modernos y fáciles de usar.</p>
+    <a href="#servicios" class="boton">Ver servicios</a>  <!-- href=a dónde lleva al usuario cuando hace clic.-->
+    <section class="hero">
+          <div class="contenido-hero"> <!-- Una caja genérica para agrupar cosas y darles estilo con CSS. class se puede repetir -->
+               <h2 class="subtitulo">Te ayudamos a crear tu página web </h2>
+               <!-- aqui vamos a poner la imagen hero-->
+              <!-- <img src="img/hero.png" alt="imagen hero"> -->
+
+          <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-map-pin">
+	<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	<path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+	<path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0" />
+     </svg>
+
+     <p><class="place">Aguascalientes, Ags.</p>
+     <a href="#" class="places boton">Contactanos</a>
+          </div>
+     </section> <!--agrupa un bloque de contenido con tema propio-->
+
+     <div class="fila-porques">
+     <section class="porque">
+    <h1>¿Porque deberias tener una pagina web?</h1>
+    <div class="icono1">
+        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="#fafafa" class="icon icon-tabler icons-tabler-filled icon-tabler-help-hexagon">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M10.425 1.414a3.33 3.33 0 0 1 3.026 -.097l.19 .097l6.775 3.995l.096 .063l.092 .077l.107 .075a3.224 3.224 0 0 1 1.266 2.188l.018 .202l.005 .204v7.284c0 1.106 -.57 2.129 -1.454 2.693l-.17 .1l-6.803 4.302c-.918 .504 -2.019 .535 -3.004 .068l-.196 -.1l-6.695 -4.237a3.225 3.225 0 0 1 -1.671 -2.619l-.007 -.207v-7.285c0 -1.106 .57 -2.128 1.476 -2.705l6.95 -4.098zm1.575 13.586a1 1 0 0 0 -.993 .883l-.007 .117l.007 .127a1 1 0 0 0 1.986 0l.007 -.117l-.007 -.127a1 1 0 0 0 -.993 -.883zm1.368 -6.673a2.98 2.98 0 0 0 -3.631 .728a1 1 0 0 0 1.44 1.383l.171 -.18a.98 .98 0 0 1 1.11 -.15a1 1 0 0 1 -.34 1.886l-.232 .012a1 1 0 0 0 .111 1.994a3 3 0 0 0 1.371 -5.673z" />
+        </svg>
+        <p>Una página web ayuda a que tu negocio tenga mayor presencia en internet, llegue a más clientes y genere confianza. Además, permite mostrar tus productos o servicios de forma profesional y estar disponible para tus clientes las 24 horas del día.</p>
+    </div>
+</section> 
+
+<section class="porque2">
+    <h1>¿Porque deberias elegir webcraft?</h1>
+    <div class="icono2">
+        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="#fafafa" class="icon icon-tabler icons-tabler-filled icon-tabler-location">
+	<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	<path d="M20.891 2.006l.106 -.006l.13 .008l.09 .016l.123 .035l.107 .046l.1 .057l.09 .067l.082 .075l.052 .059l.082 .116l.052 .096c.047 .1 .077 .206 .09 .316l.005 .106c0 .075 -.008 .149 -.024 .22l-.035 .123l-6.532 18.077a1.55 1.55 0 0 1 -1.409 .903a1.547 1.547 0 0 1 -1.329 -.747l-.065 -.127l-3.352 -6.702l-6.67 -3.336a1.55 1.55 0 0 1 -.898 -1.259l-.006 -.149c0 -.56 .301 -1.072 .841 -1.37l.14 -.07l18.017 -6.506l.106 -.03l.108 -.018z" />
+</svg>
+        <p> Webcraft te ofrece
+Diseños personalizados.
+Adaptación a diferentes dispositivos.
+Diseño moderno y profesional.
+Atención personalizada.
+Mantenimiento y soporte.</p>
+    </div>
+</section>
+
+<section class="porque3">
+    <h1>Tecnologias que utilizamos en Wwebcraft</h1>
+    <div class="icono3">
+        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="#fafafa" class="icon icon-tabler icons-tabler-filled icon-tabler-sitemap">
+	<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	<path d="M2 16.667a2.667 2.667 0 0 1 2.667 -2.667h2.666a2.667 2.667 0 0 1 2.667 2.667v2.666a2.667 2.667 0 0 1 -2.667 2.667h-2.666a2.667 2.667 0 0 1 -2.667 -2.667z" />
+	<path d="M14 16.667a2.667 2.667 0 0 1 2.667 -2.667h2.666a2.667 2.667 0 0 1 2.667 2.667v2.666a2.667 2.667 0 0 1 -2.667 2.667h-2.666a2.667 2.667 0 0 1 -2.667 -2.667z" />
+	<path d="M8 4.667a2.667 2.667 0 0 1 2.667 -2.667h2.666a2.667 2.667 0 0 1 2.667 2.667v2.666a2.667 2.667 0 0 1 -2.667 2.667h-2.666a2.667 2.667 0 0 1 -2.667 -2.667z" />
+	<path d="M12 8a1 1 0 0 0 -1 1v2h-3c-1.645 0 -3 1.355 -3 3v1a1 1 0 0 0 1 1a1 1 0 0 0 1 -1v-1c0 -.564 .436 -1 1 -1h8c.564 0 1 .436 1 1v1a1 1 0 0 0 1 1a1 1 0 0 0 1 -1v-1c0 -1.645 -1.355 -3 -3 -3h-3v-2a1 1 0 0 0 -1 -1z" />
+</svg>
+        <p>HTML · CSS · JavaScript · WordPress · Diseño UX/UI</p>
+    </div>
+</section>
+</div>
+
+  </section>
+  <!-- 2. SERVICIOS -->
+  <section id="servicios">
+    <h2>Servicios que ofrecemos</h2>
+    <div class="tarjetas">
+      <div class="tarjeta">
+        <h3>Diseño web</h3>
+        <p>Páginas bonitas y adaptadas a tu negocio segun tu estilo.</p>
+      </div>
+      <div class="tarjeta">
+        <h3>Diseño responsive</h3>
+        <p>Adaptabilidad perfectamente a celulares, tablets y computadoras.</p>
+      </div>
+      <div class="tarjeta">
+        <h3>Mantenimiento</h3>
+        <p>Actualizamos y arreglamos tu página cuando lo necesites.</p>
+      </div>
+    </div>
+  </section>
+  <section class="hero2">
+    <div class="contenido hero2">
+        <!-- <img src="img/hero.png" alt="imagen hero"> -->
+         <img src="img/WhatsApp Image 2026-09-21 at 12.39.35 AM.jpeg" alt="">
+    </div>
+<!-- h1=El título más grande e importante -->
+ <!-- h2=Un subtítulo -->
+  <!-- h3=Un sub-subtítulo, dentro de esa sección -->
+
+  <!-- 3. DISEÑOS -->
+  <section id="disenos" class="oscura">
+    <h2>Diseños que ofrecemos</h2>
+    <div class="tarjetas">
+      <div class="tarjeta">
+        <div class="muestra diseno1"></div>
+        <h3>Minimalista</h3>
+        <p>Limpio y con mucho espacio.</p>
+      </div>
+      <div class="tarjeta">
+        <div class="muestra diseno2"></div>
+        <h3>Profesional</h3>
+        <p>Ideal para empresas y negocios.</p>
+      </div>
+      <div class="tarjeta">
+        <div class="muestra diseno3"></div>
+        <h3>Moderno</h3>
+        <p>Con degradados y estilo actual.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero2">
+    <div class="contenido hero2">
+        <!-- <img src="img/hero.png" alt="imagen hero"> -->
+         <img src="img2/hero.png" alt="">
+    </div>
+  </section>
+
+  <!--aqui va la seccion del formulario-->
+<section>
+     <!--titulo de la section-->
+<h2>Contactanos</h2>
+<form class="formulario">
+<fieldset> <!--fieldset=agrupa campos relacionados dentro de un formulario-->
+  <!--label=la etiqueta de texto de un campo de formulario-->
+  <!--input=la caja donde el usuario escribe o elige algo-->
+  
+     <legend>Enviame un mail para programar una cita</legend>
+     <div class="contenedor-campos">
+<div class="campo">
+<label>NOMBRE</label><input type="text"  
+class="input-text"
+placeholder="Escribe tu nombre">
+</div>
+ <div class="campo">
+<label>TELEFONO</label>
+<input
+ type="tel"
+ class="input-text"
+ placeholder="Aqui va tu telefono">
+</div>
+ <div class="campo">
+<label>
+EMAIL</label>
+ <input type="email"
+class="input-text"
+placeholder="Escribe tu email">
+</div>
+ <div class="campo">
+<label>DEJANOS TU MENSAJE</label>
+<textarea
+ class="input-text" placeholder="Escribe aqui tu mensaje"></textarea>
+ </div>
+<div class="enviar">
+ <input type="submit"
+ class="boton"
+value="Enviar">
+</div>
+</div>
+</fieldset>
+</form>
+
+
+  <!-- 4. INFORMACIÓN PERSONAL -->
+  <section id="informacion">
+    <h2>Información personal</h2>
+    <div class="info">
+      <p><strong>Nombre:</strong> Renata Beltran Villalobos</p>
+      <p><strong>Profesión:</strong> Diseñadora web</p>
+      <p><strong>Correo:</strong> rbeltranvillalobos@gmail.com</p>
+      <p><strong>Teléfono:</strong> 4961292700</p>
+      <p><strong>Ciudad:</strong> Aguascalientes </p> <!-- p= es para el texto-->
+    </div>
+  </section>
+
+  <section class="cv">
+    <div class="contenido cv">
+        <!-- <img src="img/hero.png" alt="imagen hero"> -->
+         <img src="cv/cvv.jpeg" alt="">
+    </div>
+
+  <footer>
+    <p>Redes sociales Renata Beltran Villalobos </p>
+  </footer> <!-- es el pie de página -->
+
+
+
+<footer class="qq">
+
+  <a href="https://www.instagram.com/_renata_bv?igsi=aGQwYTU3ajRiZXIz">
+    <h3>Instagram</h3>
+    <div class="icono">
+      <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="#fafafa" class="icon icon-tabler icons-tabler-filled icon-tabler-brand-instagram">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <path d="M16 3a5 5 0 0 1 5 5v8a5 5 0 0 1 -5 5h-8a5 5 0 0 1 -5 -5v-8a5 5 0 0 1 5 -5zm-4 5a4 4 0 0 0 -3.995 3.8l-.005 .2a4 4 0 1 0 4 -4m4.5 -1.5a1 1 0 0 0 -.993 .883l-.007 .127a1 1 0 0 0 1.993 .117l.007 -.127a1 1 0 0 0 -1 -1" />
+      </svg>
+    </div>
+  </a>
+
+  <a href="https://www.facebook.com/ignacio.soto.5496683?mibextid=wwXIfr&mibextid=wwXIfr">
+    <h3>Facebook</h3>
+    <div class="icono">
+      <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="#fafafa" class="icon icon-tabler icons-tabler-filled icon-tabler-brand-facebook">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <path d="M18 2a1 1 0 0 1 .993 .883l.007 .117v4a1 1 0 0 1 -.883 .993l-.117 .007h-3v1h3a1 1 0 0 1 .991 1.131l-.02 .112l-1 4a1 1 0 0 1 -.858 .75l-.113 .007h-2v6a1 1 0 0 1 -.883 .993l-.117 .007h-4a1 1 0 0 1 -.993 -.883l-.007 -.117v-6h-2a1 1 0 0 1 -.993 -.883l-.007 -.117v-4a1 1 0 0 1 .883 -.993l.117 -.007h2v-1a6 6 0 0 1 5.775 -5.996l.225 -.004h3z" />
+      </svg>
+    </div>
+  </a>
+
+  <a href="https://www.tiktok.com/@_rbv_00?_r=1&_t=ZS-999iwt8DCnx">
+    <h3>TikTok</h3>
+    <div class="icono">
+      <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="#fafafa" class="icon icon-tabler icons-tabler-filled icon-tabler-brand-tiktok">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <path d="M16.083 2h-4.083a1 1 0 0 0 -1 1v11.5a1.5 1.5 0 1 1 -2.519 -1.1l.12 -.1a1 1 0 0 0 .399 -.8v-4.326a1 1 0 0 0 -1.23 -.974a7.5 7.5 0 0 0 1.73 14.8l.243 -.005a7.5 7.5 0 0 0 7.257 -7.495v-2.7l.311 .153c1.122 .53 2.333 .868 3.59 .993a1 1 0 0 0 1.099 -.996v-4.033a1 1 0 0 0 -.834 -.986a5.005 5.005 0 0 1 -4.097 -4.096a1 1 0 0 0 -.986 -.835z" />
+      </svg>
+    </div>
+  </a>
+
+  <a href="https://wa.me/qr/WORQFOMAT3OUI1">
+    <h3>WhatsApp</h3>
+    <div class="icono">
+      <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="#fafafa" class="icon icon-tabler icons-tabler-filled icon-tabler-brand-whatsapp">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <path d="M18.497 4.409a10 10 0 0 1 -10.36 16.828l-.223 -.098l-4.759 .849l-.11 .011a1 1 0 0 1 -.11 0l-.102 -.013l-.108 -.024l-.105 -.037l-.099 -.047l-.093 -.058l-.014 -.011l-.012 -.007l-.086 -.073l-.077 -.08l-.067 -.088l-.056 -.094l-.034 -.07l-.04 -.108l-.028 -.128l-.012 -.102a1 1 0 0 1 0 -.125l.012 -.1l.024 -.11l.045 -.122l1.433 -3.304l-.009 -.014a10 10 0 0 1 1.549 -12.454l.215 -.203a10 10 0 0 1 13.226 -.217m-8.997 3.09a1.5 1.5 0 0 0 -1.5 1.5v1a6 6 0 0 0 6 6h1a1.5 1.5 0 0 0 0 -3h-1l-.144 .007a1.5 1.5 0 0 0 -1.128 .697l-.042 .074l-.022 -.007a4.01 4.01 0 0 1 -2.435 -2.435l-.008 -.023l.075 -.041a1.5 1.5 0 0 0 .704 -1.272v-1a1.5 1.5 0 0 0 -1.5 -1.5" />
+      </svg>
+    </div>
+  </a>
+
+</footer>
+
+
+
+</body>
+</html>

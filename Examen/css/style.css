@@ -1,0 +1,408 @@
+/* paleta de colores */
+:root {
+    --azul: #1d4ed8;
+    --azulClaro: #3b82f6;
+    --azulOscuro: #1e3a8a;
+    --negro: #0a0a0a;
+    --blanco: white;
+
+
+}
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0; /* Espacio dentro del elemento (entre el borde y el contenido)*/
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth; /* desplazamiento suave al hacer clic en el menú */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #0a0a0a; /* Color del fondo */  
+  color: white;  /* Color del texto */
+  line-height: 1.6;
+}
+
+/* Barra de navegación */
+header {
+  position: sticky;      /* position-sticky= se queda fija arriba */
+  top: 0;
+  display: flex; /*Convierte el elemento en una "caja flexible" para acomodar en fila o columna fácilmente.*/
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 15px 30px;
+  background: #000; /* color de barra */
+  border-bottom: 3px solid #1d4ed8;   /* linea de color */
+  z-index: 10;  /* controla qué se ve por encima de qué */
+}
+
+header h1 {
+  color: #3b82f6;  /* titulo webcraft */      
+}
+
+nav a {
+  color: white; /* pestañas */ 
+  margin-left: 20px; 
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #3b82f6;
+}
+
+/* Secciones */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+section h2 {
+  color: #3b82f6;
+  margin-bottom: 20px;
+  font-size: 2rem; 
+}
+
+/* Inicio */
+.inicio {
+  padding: 120px 20px; /* es el espacio dentro del elemento */
+  margin-top: 20px;
+  background: linear-gradient(135deg, #000, #1e3a8a);
+}
+
+.inicio h2 {
+  color: white;
+  font-size: 2.5rem;
+}
+
+.boton {
+  display: inline-block; /* sirve para el acomodo de un elemento */
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #2563eb;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.boton:hover {
+  background: #1d4ed8;
+}
+
+/* Sección con fondo azul oscuro */
+.oscura {
+  background: #0f172a;
+}
+
+/* Tarjetas */
+.tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;  /* separación entre elementos dentro de un contenedor */
+  justify-content: center; /* Centra los elementos dentro de un flex. */
+}
+
+.tarjeta {
+  width: 260px;
+  padding: 20px;
+  background: #111827;
+  border: 2px solid #1d4ed8;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(240, 239, 239, 0.4);
+}
+
+.tarjeta h3 {
+  color: #60a5fa;
+  margin-bottom: 8px;
+  
+}
+
+.muestra {
+  height: 110px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  box-shadow: 0 4px 10px rgba(240, 239, 239, 0.4);
+}
+
+.diseno1 { background: #ffffff; }
+.diseno2 { background: #566387; }
+.diseno3 { background: linear-gradient(45deg, #fb89d5, #3b82f6); } /* para hacer un degradado de colores */
+
+
+/* Información personal */
+.info {
+  max-width: 450px;
+  margin: 0 auto;     /*Espacio fuera del elemento (lo aleja de otros elementos)*/
+  padding: 25px;
+  background: #111827;
+  border: 2px solid #3b82f6;
+  border-radius: 12px;
+  text-align: left;
+  box-shadow: 0 4px 10px rgba(240, 239, 239, 0.4);
+}
+
+.info p {
+  margin-bottom: 10px;
+}
+
+.info strong {
+  color: #60a5fa;
+}
+
+/* Pie de página */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #000;
+  border-top: 3px solid #1d4ed8; /* un borde solo en la parte de arriba */
+  align-items: center;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.formulario { 
+  max-width: 750px;
+  margin: 0 auto; 
+  padding: 30px;
+  background: #111827;
+  border: 2px solid #114dae;
+  border-radius: 20px;
+  text-align: left;
+  box-shadow: 0 4px 10px rgba(240, 239, 239, 0.4);
+} 
+
+.contenido.cv img {
+    width: 250px;            /* ancho del tamaño de la imagen*/
+    max-width: 100%;         /* nunca se sale del contenedor, aunque pongas un número grande */
+    height: auto;            /*  (alto) mantiene la proporción para que no se deforme */
+    display: block;          /* permite centrarla con margin */
+    margin: 0 auto;          /* la centra horizontalmente */
+    border-radius: 12px;     /* opcional: le redondea las esquinas */
+}
+
+.contenido.cv {
+    display: inline-block;        /* el cuadro se ajusta al tamaño del contenido */
+    padding: 15px;                /* espacio entre la imagen y el borde de la caja */
+    background: #111827;          /* color de fondo del cuadro (negro azulado, va con tu paleta) */
+    border: 2px solid #3b82f6;    /* borde azul */
+    border-radius: 12px;          /* esquinas redondeadas */
+    box-shadow: 0 4px 10px rgba(240, 239, 239, 0.4); /* sombra para que "flote" */
+}
+
+.qq {
+    display: flex;              /* pone los elementos en fila */
+    justify-content: center;    /* los centra horizontalmente */
+    align-items: center;        /* los alinea verticalmente */
+    flex-wrap: wrap;            /* si no caben, pasan a la siguiente línea (celulares) */
+    gap: 30px;                  /* espacio entre cada red social */
+    padding: 30px 20px;
+    background: #000;
+    border-top: 3px solid #1d4ed8;
+}
+
+.qq a {
+    display: flex; 
+    flex-direction: column;     /* el título arriba, el ícono abajo */
+    align-items: center;
+    gap: 8px;                 /* separación entre elementos dentro de un contenedor */
+    color: #fafafa;
+    text-decoration: none;
+}
+
+.qq h3 {
+    color: #60a5fa;
+    font-size: 1rem;
+}
+
+.qq .icono svg {
+    width: 40px;                /* los iconos vienen a 100px, esto los reduce */
+    height: 40px;
+    transition: transform 0.2s; /* efecto suave al pasar el mouse */
+}
+
+.qq a:hover .icono svg {
+    transform: scale(1.15);     /* para que crezca un poco al pasar el mouse */
+}
+
+.contenido.hero2 img {
+    width: 900px;       /* ajustar número*/
+    max-width: 100%;    /* sirve para que nunca se salga del contenedor */
+    height: auto;       /* mantiene la proporción y evita que se deforme */
+}
+
+.porque {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.porque h1 {
+    color: #3b82f6;
+    margin-bottom: 30px;
+}
+
+.icono1 {
+    max-width: 500px;             /* ancho máximo del cuadro */
+    margin: 0 auto;               /* sirve para que lo centre en la página */
+    padding: 25px;                /* espacio entre el contenido y el borde */
+    background: #111827;          /* fondo del cuadro */
+    border: 2px solid #3b82f6;    /* borde del color que quieras */
+    border-radius: 12px;          /* esquinas redondeadas */
+    box-shadow: 0 4px 10px rgba(146, 144, 144, 0.4); /* sombra para que flote */
+}
+
+.icono1 svg {
+    margin-bottom: 10px;
+}
+
+.icono1 p {
+    color: #fafafa;
+    line-height: 1.6;
+} 
+
+.porque2 {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.porque2 h1 {
+    color: #3b82f6;
+    margin-bottom: 30px;
+}
+
+.icono2 {
+    max-width: 500px;             /* ancho máximo del cuadro */
+    margin: 0 auto;               /* sirve para que lo centre en la página */
+    padding: 25px;                /* espacio entre el contenido y el borde */
+    background: #111827;          /* fondo del cuadro */
+    border: 2px solid #3b82f6;    /* borde del color que eligas */
+    border-radius: 12px;          /* esquinas redondeadas */
+    box-shadow: 0 4px 10px rgba(146, 144, 144, 0.4); /* sombra para que flote */
+}
+
+.icono2 svg {
+    margin-bottom: 10px;
+}
+
+.icono2 p {
+    color: #fafafa;
+    line-height: 1.6;
+} 
+
+.porque3 {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.porque3 h1 {
+    color: #3b82f6;
+    margin-bottom: 30px;
+}
+
+.icono3 {
+    max-width: 500px;             /* ancho máximo del cuadro */
+    margin: 0 auto;               /* sirve para que lo centre en la página */
+    padding: 25px;                /* espacio entre el contenido y el borde */
+    background: #111827;          /* fondo del cuadro */
+    border: 2px solid #3b82f6;    /* borde del color que eligas */
+    border-radius: 12px;          /* esquinas redondeadas */
+    box-shadow: 0 4px 10px rgba(146, 144, 144, 0.4); /* sombra para que flote */
+}
+
+.icono3 svg {
+    margin-bottom: 10px;
+}
+
+.icono3 p {
+    color: #fafafa;
+    line-height: 1.6;
+}
+.fila-porques {
+    display: flex;
+    flex-wrap: wrap;           /* para que en pantallas chicas, pasan a la siguiente línea */
+    justify-content: center;
+    align-items: stretch;      /* para que los tres cuadros quedan de la misma altura */
+    gap: 80px;
+    padding: 60px 20px;
+}
+
+.porque, .porque2, .porque3 {
+    flex: 1;                   /* para que las tres columnas se reparten el espacio en partes iguales */
+    min-width: 260px;          /* ancho mínimo antes de bajar de línea en celular */
+    max-width: 320px;
+    text-align: center;
+}
+
+.porque h1, .porque2 h1, .porque3 h1 {
+    color: #3b82f6;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+.icono1, .icono2, .icono3 {
+    height: 100%;               /* para que las tres cajas se vean parejas */
+    padding: 25px;
+    background: #111827;
+    border: 2px solid #3b82f6;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(103, 103, 103, 0.4);
+}
+
+.icono1 svg, .icono2 svg, .icono3 svg {
+    margin-bottom: 10px;
+}
+
+.icono1 p, .icono2 p, .icono3 p {
+    color: #fafafa;
+    line-height: 1.6;
+}
+
+.qq {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    max-width: 700px;             /* ancho máximo del cuadro */
+    margin: 40px auto;            /* lo centra en la página y le da espacio arriba/abajo */
+    padding: 30px 20px;
+    background: #111827;          /* fondo del cuadro */
+    border: 2px solid #3b82f6;    /* borde azul */
+    border-radius: 16px;          /* esquinas redondeadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* sombra */
+}
+
+.qq a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    color: #fafafa;
+    text-decoration: none;
+}
+
+.qq h3 {
+    color: #60a5fa;
+    font-size: 1rem;
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* sombra */
+
+}
+
+.qq .icono svg {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.2s;
+}
+
+.qq a:hover .icono svg {
+    transform: scale(1.15);
+}
+
